@@ -38,7 +38,6 @@ echo '#########################'
 echo "# 7. Running AnythingLLM Docker container..."
 export STORAGE_LOCATION=$HOME/anythingllm && sudo docker run -d -p 3001:3001 --name anythingllm  --cap-add SYS_ADMIN -v ${STORAGE_LOCATION}:/app/server/storage -v ${STORAGE_LOCATION}/.env:/app/server/.env -e STORAGE_DIR="/app/server/storage" mintplexlabs/anythingllm
 
-
 # Final message
 echo "Docker, Docker Compose, AnythingLLM, and Ollama (llama3.2) have been successfully installed and the containers are running!"
 
